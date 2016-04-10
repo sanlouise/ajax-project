@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Your Moving Companion</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Your City Checker</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <form id="form-container" class="form-container">
-        <label for="street">Street: </label><input type="text" id="street" value="">
-        <label for="city">City: </label><input type="text" id="city" value="">
-        <button id="submit-btn">Submit</button>
-    </form>
-
-    <hr>
-
-    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
-
-
-    <div class="wikipedia-container">
-        <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
-        <ul id="wikipedia-links">Type in an address above and find relevant Wikipedia articles here!</ul>
+  <container>
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="center header">Your City Checker</h1>
+      </div>
+      <hr>
+  
+      <h2 id="greeting" class="greeting">Which city do you want to check out?</h2>
+  
+      <form id="form-container" class="form-container center">
+      <label for="street">Street: </label><input type="text" id="street" value="">
+      <label for="city">City: </label><input type="text" id="city" value="">
+      <button id="submit-btn">Go!</button>
+      </form>
+  
+      <div class="col-md-5 col-md-offset-1">
+          <h3 id="nytimes-header">New York Times Articles</h3>
+          <ul id="nytimes-articles" class="article-list">Enter an address to see what's going on your city of choice! </ul>
+      </div>
+  
+  
+      <div class="col-md-4 col-md-push-1">
+          <h3 id="wikipedia-header">Wikipedia Links</h3>
+          <ul id="wikipedia-links">Type in an address above and Wikipedia articles will appear here!</ul>
+      </div>
+  
+      <script src="js/libs/jquery.min.js"></script>
+      <script src="js/script.js"></script>
     </div>
-
-
-    <div class="nytimes-container">
-        <h3 id="nytimes-header">New York Times Articles</h3>
-        <ul id="nytimes-articles" class="article-list">What's going on in your new city? Enter an address and hit submit and the NY Times will tell you here!</ul>
-    </div>
-
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+  </container>
 </body>
 </html>

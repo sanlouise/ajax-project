@@ -1,5 +1,8 @@
 * {box-sizing:border-box;}
-body {background-color: #CCC;}
+body {
+    background-color: #CCC;
+    font-family: "Open Sans";
+}
 
 .bgimg {
     position:fixed;
@@ -10,23 +13,33 @@ body {background-color: #CCC;}
     opacity:1;
 }
 
+.center {
+    text-align: center;
+}
+
+.header {
+    font-size: 60px;
+    color: black;
+}
+
+.header.center {
+    margin-bottom: 30px;
+}
+
 .greeting {
     color:black;
     text-shadow: 1px 1px 3px rgba(255,255,255, .5);
     text-align: center;
 }
 
-.wikipedia-container {
-    float:right;
-    width:290px;
-    padding:10px;
-    margin-right: 10px;
+.col-md-4.col-md-push-1 {
+    margin-top: 40px;
     background-color: rgba(255,255,255,0.7);
+
 }
 
-.nytimes-container {
-    padding: 10px;
-    margin-right:300px;
+.col-md-5.col-md-offset-1 {
+    margin-top: 40px;
     background-color: rgba(255,255,255,0.7);
 }
 
