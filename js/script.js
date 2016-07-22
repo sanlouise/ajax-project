@@ -1,3 +1,4 @@
+var NYTIMES_API_KEY = require('../secrets');
 
 function loadData() {
 
@@ -28,7 +29,7 @@ function loadData() {
 
     //Define URL
     // NY Times AJAX request
-    var nytimesUrl = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + cityStr + '&sort=newest&api-key=56f2be64bc49604739f4ac50190cbe05:0:74964173'
+    var nytimesUrl = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + cityStr + '&sort=newest&api-key=' + NYTIMES_API_KEY
     $.getJSON(nytimesUrl, function (data) {
         $nytHeaderElem.text('New York Times Articles About ' + cityStr);
         articles = data.response.docs;
